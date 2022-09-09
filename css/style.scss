@@ -9,7 +9,7 @@ $trans: all 0.3s ease-in-out;
     top: 0;
     width: 100%;
     background-color: transparent;
-    padding: 1rem 0;
+    padding: 1.8rem 0;
     z-index: 999;
     & .container {
         justify-content: space-between;
@@ -25,29 +25,35 @@ $trans: all 0.3s ease-in-out;
     }
     &-link{
         color: #fff;
-        font-size: 1.2rem;
+        font-size: 2.4rem;
+        font-weight: 300;
+        line-height: 1.6;
         transition: $trans;
+        padding: 0.2rem;
         &:hover{
+            font-weight: 400;
             opacity: 0.8;
+            // opacity: 1;
         }
     }
 
 }
 .site-brand {
     color: #fff;
-    font-size: 2.4rem;
+    font-size: 4.4rem;
     font-family: 'Raleway', sans-serif ;
     font-weight: 600;
     opacity: 0.95;
     & span{
         font-weight: 300;
+        // letter-spacing: 0.1px;
     }
 }
 #navbar{
     &-show-btn{
     background: transparent;
     color: #fff;
-    font-size: 2rem;
+    font-size: 2.4rem;
     opacity: 0.9;
     transition: $trans;
     border: none;
@@ -62,7 +68,7 @@ $trans: all 0.3s ease-in-out;
         right: 0; 
         width: 30rem;
         height: 100%;
-        padding: 2rem;
+        padding: 2.8rem;
         transform: translateX(100%);
         transition: $trans;
     }
@@ -70,12 +76,12 @@ $trans: all 0.3s ease-in-out;
         background: none;
         color: #fff;
         width: 35px;
-        border-radius: 0.2rem;
-        font-size: 2rem;
+        border-radius: 0.2.8rem;
+        font-size: 2.8rem;
         transition: $trans;
         position: absolute;
-        right: 1rem;
-        top: 2rem;
+        right: 1.4rem;
+        top: 2.8rem;
 
     }
     &-close-btn{
@@ -83,11 +89,11 @@ $trans: all 0.3s ease-in-out;
         color: #fff;
         width: 35px;
         height: 35px;
-        border-radius: 0.2rem;
+        border-radius: 0.2.8rem;
         transition: $trans;
         position: absolute;
-        right: 1rem;
-        top: 2rem;
+        right: 1.4rem;
+        top: 2.8rem;
         border: none; 
         &:hover{
             background-color: #fff;
@@ -105,7 +111,7 @@ header {
     text-align: center;
 }
 .header-title h1 {
-    font-size: 2.8rem;
+    font-size: 3.5rem;
     letter-spacing: 2px;
     animation: bounce-in-top 1.1s both;
 }
@@ -151,14 +157,15 @@ header {
     margin: 1.8rem auto;
     max-width: 700px;
     font-weight: 500;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
+    line-height: 1.7;
 }
 .header-form {
     background: rgba(0,0,0,0.5);
     padding: 3rem;
-    border-radius: .2rem;
+    border-radius: 0.2.8rem;
     & h3 {
-        font-size: 1.2rem;
+        font-size: 2.2rem;
     }
     & form{
         flex-direction: column;
@@ -167,11 +174,250 @@ header {
     & form .form-control {
         box-shadow: 2px 4px 4px rgba(0,0,0, 0.4);
     }
+    & input {
+        margin-right: 1rem;
+    }
     & input[ type = "date"] {
         text-transform: uppercase;
         color: #fff;
     }
     & input:not([type = "submit"])::placeholder {
         color: #fff;
+    }
+    & .btn {
+        // margin-top: 0.8rem;
+    }
+}
+::-webkit-calendar-picker-indicator {
+    filter: invert(1); 
+} 
+
+// change background on scroll
+.navbar-cng {
+    background-color: #fff;
+    box-shadow: 0 4px 5px 0 rgba(48, 48, 48, 0.2);
+    transition: $trans;
+    & .site-brand {
+        color: $dark;
+        & span{
+            color: $green;
+        }
+    }
+    & #navbar-show-btn {
+        color: $green;
+    }
+
+}
+
+// featured
+.featured-item {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    transition: $trans;
+    &::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        background: linear-gradient(to bottom, transparent 0%, transparent 18%, rgba(0,0,0,0.8) 99%, rgba(0,0,0,0.8) 100%);
+    }
+    &-content {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 2;
+        color: #fff;
+        width: 100%;
+        padding: 1.2rem;
+        transform: translateY(68%);
+        transition: $trans;
+        & span {
+            font-size: 1.4rem;
+            display: block;
+            margin-bottom: 1.4rem;
+            text-transform: capitalize;
+        }
+        & .text {
+            color: #fff;
+            transition: $trans;
+        }
+    }
+    &:hover .featured-item-content {
+        transform:  translateY(0);
+    }
+}
+
+#services {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../image/servicestravel.jpg) center/cover no-repeat;
+    & *{
+        color: #fff;
+    }
+}
+.services{
+    &-item {
+        text-align: center;
+        padding: 2.2rem 0.8rem;
+        margin: 2.2rem 0;
+        & h3 {
+            margin: 1.2rem 0;
+            font-size: 1.8rem;
+        }
+        & .btn {
+            margin-top: 1.8rem;
+            display: inline-block;
+        } 
+    }
+    &-icon {
+        font-size: 3.5rem;
+    }
+
+
+}
+
+#testimonials {
+    background-color: $light-grey;
+}
+.test {
+    &-item {
+        border: 2px solid $light-grey;
+        padding: 3rem 2rem;
+        position: relative;
+        background-color: #fff;
+        border-radius: 5px;
+        margin: 5rem 0 15rem 0;
+        &::after{
+            content: "";
+            position: absolute;
+            bottom: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 0;
+            border-left: 20px solid transparent;
+            border-right: 20px solid transparent ;
+            border-top: 20px solid #fff;
+        }
+        &-info{
+            position: absolute;
+            top: 122%;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            & img {
+                width: 80px;
+                height: 80px;
+                border-radius: 100%;
+                margin: 1.2rem;
+            }
+            & h3 {
+                font-size: 1.4rem;
+
+            }
+        }
+    }
+}
+
+.video-wrapper {
+    height: 500px;
+    position: relative;
+    & video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+#play-btn {
+    position: absolute;
+    z-index: 5;
+    width: 80px;
+    height: 80px;
+    background-color: $green;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    font-size: 3rem;
+    padding-left: 0.6rem ;
+    transition: $trans;
+}
+
+// footer
+
+footer{
+    background-color: $dark;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        background-color: $green;
+        height: 4px;
+        top: 0;
+        left: 0;
+        width: 100%;
+        & .site-brand {
+            margin-bottom: 1.5rem;
+            display: block;
+            font-size: 2.2rem !important;
+        }
+    }
+}
+.footer-item {
+    margin: 3.2rem 0;
+    & a{
+        font-size: 1.5rem;
+        color: #fff;
+        transition: $trans;
+        &:hover {
+            color: $green;
+        }
+    }
+    & ul {
+        padding: 0;
+    }
+    & h2 {
+        margin-bottom: 1.6rem;
+    }
+    &:nth-child(3) li {
+        margin: 0.5rem 0;
+    }
+    &:nth-child(3) a {
+        display: inline-block;
+        font-size: 1.2rem;
+        opacity: 0.7 ;
+    }
+}
+.social {
+    &-links {
+        display: flex;
+        justify-content: center;
+        & li {
+            margin: 0.7rem;
+        }
+    }
+}
+ 
+.subscribe-form {
+    & form {
+        flex-direction: column;
+        & input {
+            width: 100%;
+            max-width: 300px;
+        }
+        &[type = email]::placeholder{
+            color: #fff;
+            opacity: 0.3;
+        }
+    }
+    & .form-control {
+        border-color: rgba(255,255, 255, 0.3);
+        transition: $trans;
+        &:focus{
+            border-color: #fff;
+        }
     }
 }
