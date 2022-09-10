@@ -25,7 +25,7 @@ $trans: all 0.3s ease-in-out;
     }
     &-link{
         color: #fff;
-        font-size: 2.4rem;
+        font-size: 2.6rem;
         font-weight: 300;
         line-height: 1.6;
         transition: $trans;
@@ -157,7 +157,7 @@ header {
     margin: 1.8rem auto;
     max-width: 700px;
     font-weight: 500;
-    font-size: 1.5rem;
+    font-size: 2.1rem;
     line-height: 1.7;
 }
 .header-form {
@@ -184,9 +184,7 @@ header {
     & input:not([type = "submit"])::placeholder {
         color: #fff;
     }
-    & .btn {
-        // margin-top: 0.8rem;
-    }
+   
 }
 ::-webkit-calendar-picker-indicator {
     filter: invert(1); 
@@ -235,13 +233,20 @@ header {
         padding: 1.2rem;
         transform: translateY(68%);
         transition: $trans;
+        padding-right: 2rem;
+
+        & i {
+            padding-right: 5px;
+        }
         & span {
-            font-size: 1.4rem;
+            font-size: 1.8rem;
+            font-weight: 600;
             display: block;
             margin-bottom: 1.4rem;
             text-transform: capitalize;
         }
         & .text {
+            font-size: 1.6rem;
             color: #fff;
             transition: $trans;
         }
@@ -264,12 +269,15 @@ header {
         margin: 2.2rem 0;
         & h3 {
             margin: 1.2rem 0;
-            font-size: 1.8rem;
+            font-size: 2.2rem;
         }
         & .btn {
             margin-top: 1.8rem;
             display: inline-block;
         } 
+        & .text {
+            font-size: 1.6rem;
+        }
     }
     &-icon {
         font-size: 3.5rem;
@@ -301,9 +309,14 @@ header {
             border-right: 20px solid transparent ;
             border-top: 20px solid #fff;
         }
+        & .text {
+            text-align: justify;
+
+            font-size: 1.6rem;
+        }
         &-info{
             position: absolute;
-            top: 122%;
+            top: 110%;
             left: 50%;
             transform: translateX(-50%);
             text-align: center;
@@ -314,8 +327,8 @@ header {
                 margin: 1.2rem;
             }
             & h3 {
-                font-size: 1.4rem;
-
+                font-size: 2rem;
+                margin-bottom: 3px;
             }
         }
     }
@@ -368,8 +381,20 @@ footer{
 }
 .footer-item {
     margin: 3.2rem 0;
+    
+    
+    & .site-brand{
+        display: block;
+        margin: auto;
+        font-size: 2.2rem;
+        padding-bottom: 1.2rem ;
+        & p .text {
+            font-size: 2rem;
+            text-align: justify;
+        }
+    }
     & a{
-        font-size: 1.5rem;
+        
         color: #fff;
         transition: $trans;
         &:hover {
@@ -380,14 +405,16 @@ footer{
         padding: 0;
     }
     & h2 {
+        font-size: 2rem;
         margin-bottom: 1.6rem;
     }
     &:nth-child(3) li {
-        margin: 0.5rem 0;
+        margin: 1rem 0;
     }
     &:nth-child(3) a {
         display: inline-block;
-        font-size: 1.2rem;
+        font-size: 1.4rem;
+        font-weight: 400;
         opacity: 0.7 ;
     }
 }
@@ -399,14 +426,20 @@ footer{
             margin: 0.7rem;
         }
     }
+    &-icon {
+        font-size: 2rem;
+        margin: 0 2rem;
+    }
 }
  
 .subscribe-form {
     & form {
         flex-direction: column;
+        
         & input {
             width: 100%;
             max-width: 300px;
+            margin: auto;
         }
         &[type = email]::placeholder{
             color: #fff;
@@ -414,6 +447,7 @@ footer{
         }
     }
     & .form-control {
+        margin-bottom: 1.2rem;
         border-color: rgba(255,255, 255, 0.3);
         transition: $trans;
         &:focus{

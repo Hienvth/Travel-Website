@@ -20,7 +20,7 @@
 }
 .navbar-link {
   color: #fff;
-  font-size: 2.4rem;
+  font-size: 2.6rem;
   font-weight: 300;
   line-height: 1.6;
   transition: all 0.3s ease-in-out;
@@ -147,7 +147,7 @@ header {
   margin: 1.8rem auto;
   max-width: 700px;
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 2.1rem;
   line-height: 1.7;
 }
 
@@ -176,6 +176,7 @@ header {
 .header-form input:not([type=submit])::placeholder {
   color: #fff;
 }
+
 ::-webkit-calendar-picker-indicator {
   filter: invert(1);
 }
@@ -221,14 +222,20 @@ header {
   padding: 1.2rem;
   transform: translateY(68%);
   transition: all 0.3s ease-in-out;
+  padding-right: 2rem;
+}
+.featured-item-content i {
+  padding-right: 5px;
 }
 .featured-item-content span {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
+  font-weight: 600;
   display: block;
   margin-bottom: 1.4rem;
   text-transform: capitalize;
 }
 .featured-item-content .text {
+  font-size: 1.6rem;
   color: #fff;
   transition: all 0.3s ease-in-out;
 }
@@ -250,11 +257,14 @@ header {
 }
 .services-item h3 {
   margin: 1.2rem 0;
-  font-size: 1.8rem;
+  font-size: 2.2rem;
 }
 .services-item .btn {
   margin-top: 1.8rem;
   display: inline-block;
+}
+.services-item .text {
+  font-size: 1.6rem;
 }
 .services-icon {
   font-size: 3.5rem;
@@ -284,9 +294,13 @@ header {
   border-right: 20px solid transparent;
   border-top: 20px solid #fff;
 }
+.test-item .text {
+  text-align: justify;
+  font-size: 1.6rem;
+}
 .test-item-info {
   position: absolute;
-  top: 122%;
+  top: 110%;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
@@ -298,7 +312,8 @@ header {
   margin: 1.2rem;
 }
 .test-item-info h3 {
-  font-size: 1.4rem;
+  font-size: 2rem;
+  margin-bottom: 3px;
 }
 
 .video-wrapper {
@@ -349,8 +364,17 @@ footer::before .site-brand {
 .footer-item {
   margin: 3.2rem 0;
 }
+.footer-item .site-brand {
+  display: block;
+  margin: auto;
+  font-size: 2.2rem;
+  padding-bottom: 1.2rem;
+}
+.footer-item .site-brand p .text {
+  font-size: 2rem;
+  text-align: justify;
+}
 .footer-item a {
-  font-size: 1.5rem;
   color: #fff;
   transition: all 0.3s ease-in-out;
 }
@@ -361,14 +385,16 @@ footer::before .site-brand {
   padding: 0;
 }
 .footer-item h2 {
+  font-size: 2rem;
   margin-bottom: 1.6rem;
 }
 .footer-item:nth-child(3) li {
-  margin: 0.5rem 0;
+  margin: 1rem 0;
 }
 .footer-item:nth-child(3) a {
   display: inline-block;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
+  font-weight: 400;
   opacity: 0.7;
 }
 
@@ -379,6 +405,10 @@ footer::before .site-brand {
 .social-links li {
   margin: 0.7rem;
 }
+.social-icon {
+  font-size: 2rem;
+  margin: 0 2rem;
+}
 
 .subscribe-form form {
   flex-direction: column;
@@ -386,12 +416,14 @@ footer::before .site-brand {
 .subscribe-form form input {
   width: 100%;
   max-width: 300px;
+  margin: auto;
 }
 .subscribe-form form[type=email]::placeholder {
   color: #fff;
   opacity: 0.3;
 }
 .subscribe-form .form-control {
+  margin-bottom: 1.2rem;
   border-color: rgba(255, 255, 255, 0.3);
   transition: all 0.3s ease-in-out;
 }
