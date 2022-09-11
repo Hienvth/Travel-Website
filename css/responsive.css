@@ -63,7 +63,7 @@
     .subscribe-form form {
         align-items: flex-start;
     }
-    .gallery-row, .popular-row, .blog-row {
+    .gallery-row, .popular-row, .blog-row, .facts-row {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap:2rem ;
@@ -71,12 +71,18 @@
     .gallery-item {
         margin: 0;
     }
-    .popular-row {
+    .popular-row , .facts-row{
         gap: 0;
     }
     .popular-item img {
         height: 100%;
     }
+    .facts-row{
+        -moz-column-gap: 5rem;
+             column-gap: 5rem;
+    }
+   
+    
    
 }
 @media screen and (min-width: 992px) {
@@ -117,13 +123,53 @@
     .navbar-cng .navbar-nav .navbar-link {
         color: var(--dark);
     }
-    .test-row{
+    .test-row, .about-row, .contact-row{
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
     }
     .popular-row, .blog-row {
         grid-template-columns: repeat(3, 1fr);
+    }
+    .about-row {
+        align-items: center;
+    }
+    .about-left {
+        margin: 0;
+    }
+    .facts-row {
+        grid-template-columns: repeat(4, 1fr);
+
+    }
+    .contact-row {
+        /* gap: 0; */
+        row-gap: 0;
+    }
+    .contact-form .form-control{
+        margin-left: 0;
+    }
+    .contact-form .form-control:nth-child(1) {
+        margin-top: 0;
+    }
+    .contact-right {
+        margin: 0;
+    }
+    .contact-form .btn {
+        margin-left: 0;
+    }
+    .contact-icon {
+        width: 45px;
+        height: 45px;
+        font-size: 1.5rem;
+        margin: 0 1rem;
+    }
+    .contact-item {
+        display: flex;
+        align-items: flex-start;
+        text-align: left;
+    }
+    .contact-item:nth-child(1){
+        margin-top: 0;
     }
 }
 @media screen and (min-width: 1200px) {
@@ -131,7 +177,7 @@
     .test-row, .gallery-row , .blog-row{
         grid-template-columns: repeat(3. 1fr);
     }
-    .footer-row, .popular-row {
+    .footer-row, .popular-row, .facts-row {
         grid-template-columns: repeat(4, 1fr);
     }
     .popular-item img {
