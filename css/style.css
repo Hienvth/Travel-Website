@@ -17,6 +17,7 @@
 }
 .navbar-item {
   margin: 1.6rem;
+  border-radius: 6px;
 }
 .navbar-link {
   color: #fff;
@@ -201,6 +202,8 @@ header {
   width: 100%;
   overflow: hidden;
   transition: all 0.3s ease-in-out;
+  border-radius: 6px;
+  overflow: hidden;
 }
 .featured-item::after {
   content: "";
@@ -279,7 +282,7 @@ header {
   padding: 3rem 2rem;
   position: relative;
   background-color: #fff;
-  border-radius: 5px;
+  border-radius: 6px;
   margin: 5rem 0 15rem 0;
 }
 .test-item::after {
@@ -363,6 +366,8 @@ footer::before .site-brand {
 
 .footer-item {
   margin: 3.2rem 0;
+  border-radius: 6px;
+  overflow: hidden;
 }
 .footer-item .site-brand {
   display: block;
@@ -437,6 +442,7 @@ header.header-sm {
 
 .gallery-item {
   margin: 2.2rem 0;
+  border-radius: 6px;
   overflow: hidden;
   position: relative;
   transition: all 0.3s ease-in-out;
@@ -585,6 +591,78 @@ header.header-sm {
 .popular-item span {
   font-size: 2rem;
   font-weight: 400;
+}
+
+#blog {
+  background-color: #f7f7f7;
+}
+
+.blog {
+  max-height: 800px;
+}
+.blog-item {
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+.blog-item-top {
+  height: 300px;
+  position: relative;
+}
+.blog-item-top img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.blog-item-bottom {
+  padding: 2.4rem 1.4rem;
+}
+.blog-item-bottom span {
+  font-size: 2rem;
+  color: #0e1010;
+  text-transform: uppercase;
+  opacity: 0.7;
+  letter-spacing: 2px;
+  display: block;
+  margin-top: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+.blog-item-bottom a {
+  font-size: 1.6rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  line-height: 1.6;
+  text-align: justify;
+  transition: all 0.3s ease-in-out;
+  letter-spacing: 2px;
+  display: block;
+  margin-bottom: 1.5rem;
+}
+.blog-item-bottom a:hover {
+  opacity: 0.7;
+}
+.blog-item-bottom .text {
+  font-size: 1.6rem;
+  text-align: justify;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.blog-date {
+  position: absolute;
+  background-color: #1ec6b6;
+  color: #fff;
+  padding: 1rem;
+  font-size: 1.9rem;
+  line-height: 38px;
+  height: 38px;
+  min-width: 160px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  bottom: -19px;
+  left: 5%;
+  text-align: center;
+  border-radius: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */

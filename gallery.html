@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container flex">
+            <a href="index.html" class="site-brand">
+                Trip<span>Boss</span>
+            </a>
+
+            <button id="navbar-show-btn" class="flex" type="button">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <div id="navbar-collapse">
+                <button id="navbar-close-btn" class="flex" type="button">
+                    <i class="fas fa-times"></i>
+                </button>
+                <ul class="navbar-nav">
+                    <li class="navbar-item">
+                        <a href="index.html" class="navbar-link">Home</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="gallery.html" class="navbar-link">Gallery</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="blog.html" class="navbar-link">Blog</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="about.html" class="navbar-link">About</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="contact.html" class="navbar-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="flex header-sm">
+        <div class="container">
+            <div class="header-title">
+                <h1>Gallery</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore quisquam labore sed, illo quam, sunt cum dolore iusto quidem nam, laudantium aliquam soluta? Perspiciatis necessitatibus ex minima excepturi dolorem quia!
+                </p>
+            </div>
+
+            
+        </div>
+    </header>
+
+    <!-- gallery section -->
+    <div id="gallery" class="py-4">
+        <div class="container">
+            <div class="gallery-row">
+                <div class="gallery-item shadow">
+                    <img src="./image/screen-1.jpg" alt="gallery img">
+                    <span class="zoom-icon">
+                        <i class="fa-solid fa-magnifying-glass-plus"></i>
+                    </span>
+                </div>
+                <div class="gallery-item shadow">
+                    <img src="./image/screen-2.jpg" alt="gallery img">
+                    <span class="zoom-icon">
+                        <i class="fa-solid fa-magnifying-glass-plus"></i>
+                    </span>
+                </div>
+                <div class="gallery-item shadow">
+                    <img src="./image/screen-3.jpg" alt="gallery img">
+                    <span class="zoom-icon">
+                        <i class="fa-solid fa-magnifying-glass-plus"></i>
+                    </span>
+                </div>
+                <div class="gallery-item shadow">
+                    <img src="./image/screen-5.jpg" alt="gallery img">
+                    <span class="zoom-icon">
+                        <i class="fa-solid fa-magnifying-glass-plus"></i>
+                    </span>
+                </div>
+                <div class="gallery-item shadow">
+                    <img src="./image/screen-6.jpg" alt="gallery img">
+                    <span class="zoom-icon">
+                        <i class="fa-solid fa-magnifying-glass-plus"></i>
+                    </span>
+                </div>
+                <div class="gallery-item shadow">
+                    <img src="./image/screen-7.jpg" alt="gallery img">
+                    <span class="zoom-icon">
+                        <i class="fa-solid fa-magnifying-glass-plus"></i>
+                    </span>
+                </div><div class="gallery-item shadow">
+                    <img src="./image/screen-9.jpg" alt="gallery img">
+                    <span class="zoom-icon">
+                        <i class="fa-solid fa-magnifying-glass-plus"></i>
+                    </span>
+                </div>
+                <div class="gallery-item shadow">
+                    <img src="./image/screen-10.jpg" alt="gallery img">
+                    <span class="zoom-icon">
+                        <i class="fa-solid fa-magnifying-glass-plus"></i>
+                    </span>
+                </div>
+                <div class="gallery-item shadow">
+                    <img src="./image/screen-13.jpg" alt="gallery img">
+                    <span class="zoom-icon">
+                        <i class="fa-solid fa-magnifying-glass-plus"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- img modal -->
+
+    <div id="img-modal-box">
+        <div id="img-modal">
+            <button id="modal-close-btn" type="button" class="flex">
+                <i class="fas fa-times"></i>
+            </button>
+            <button id="prev-btn" type="button" class="flex">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button id="next-btn" type="button" class="flex">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            <img src="image/screen-12.jpg" alt="aaaa">
+        </div>
+    </div>
+
+    <section id="popular" class="py-4">
+        <div class="title-wrap">
+            <span class="sm-title">
+                know about some coo destination 
+            </span>
+            <h2 class="lg-title">
+                Popular Places
+            </h2>
+        </div>
+        <div class="popular-row">
+            <div class="popular-item shadow">
+                <img src="./image/popular-1.jpeg" alt="popular">
+                <div>
+                    <span>
+                        New York, NY 10004
+                    </span>
+                    <ul class="rating flex">
+                        <li>
+                            <i class="fas fa-star"></i>
+                        </li>
+                        <li>
+                            <i class="fas fa-star"></i>
+                        </li>
+                        <li>
+                            <i class="fas fa-star"></i>
+                        </li>
+                        <li>
+                            <i class="fas fa-star"></i>
+                        </li>
+                        <li>
+                            <i class="fas fa-star-half-alt"></i>
+                        </li>
+                        <li>&nbsp; 999 reviews</li>
+                    </ul>
+                    <p class="text">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut, blanditiis.
+                    </p>
+                </div>
+            </div>
+            <div class="popular-item shadow">
+                <img src="./image/popular-2.jpeg" alt="popular">
+                <div>
+                    <span>
+                        Greater London, England
+                    </span>
+                    <ul class="rating flex">
+                        <li>
+                            <i class="fas fa-star"></i>
+                        </li>
+                        <li>
+                            <i class="fas fa-star"></i>
+                        </li>
+                        <li>
+                            <i class="fas fa-star"></i>
+                        </li>
+                        <li>
+                            <i class="fas fa-star"></i>
+                        </li>
+                        <li>
+                            <i class="fas fa-star-half-alt"></i>
+                        </li>
+                        <li>&nbsp; 999 reviews</li>
+                    </ul>
+                    <p class="text">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut, blanditiis.
+                    </p>
+                </div>
+            </div>
+            <div class="popular-item shadow">
+                <img src="./image/popular-3.jpeg" alt="popular">
+                <div>
+                    <span>
+                        Jaipur, RJ, India
+                    </span>
+                    <ul class="rating flex">
+                        <li>
+                            <i class="fas fa-star"></i>
+                        </li>
+                        <li>
+                            <i class="fas fa-star"></i>
+                        </li>
+                        <li>
+                            <i class="fas fa-star"></i>
+                        </li>
+                        <li>
+                            <i class="fas fa-star"></i>
+                        </li>
+                        <li>
+                            <i class="fas fa-star-half-alt"></i>
+                        </li>
+                        <li>&nbsp; 999 reviews</li>
+                    </ul>
+                    <p class="text">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut, blanditiis.
+                    </p>
+                </div>
+            </div>
+            <div class="popular-item shadow">
+                <img src="./image/popular-4.jpeg" alt="popular">
+                <div>
+                    <span>
+                        Colmar, Gran Est, France
+                    </span>
+                    <ul class="rating flex">
+                        <li>
+                            <i class="fas fa-star"></i>
+                        </li>
+                        <li>
+                            <i class="fas fa-star"></i>
+                        </li>
+                        <li>
+                            <i class="fas fa-star"></i>
+                        </li>
+                        <li>
+                            <i class="fas fa-star"></i>
+                        </li>
+                        <li>
+                            <i class="fas fa-star-half-alt"></i>
+                        </li>
+                        <li>&nbsp; 999 reviews</li>
+                    </ul>
+                    <p class="text">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut, blanditiis.
+                    </p>
+                </div>
+            </div>
+            <div class="popular-item shadow">
+                <img src="./image/popular-7.jpeg" alt="popular">
+                <div>
+                    <span>
+                        Sankt-Peterburg, Russia
+                    </span>
+                    <ul class="rating flex">
+                        <li>
+                            <i class="fas fa-star"></i>
+                        </li>
+                        <li>
+                            <i class="fas fa-star"></i>
+                        </li>
+                        <li>
+                            <i class="fas fa-star"></i>
+                        </li>
+                        <li>
+                            <i class="fas fa-star"></i>
+                        </li>
+                        <li>
+                            <i class="fas fa-star-half-alt"></i>
+                        </li>
+                        <li>&nbsp; 999 reviews</li>
+                    </ul>
+                    <p class="text">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut, blanditiis.
+                    </p>
+                </div>
+            </div>
+            <div class="popular-item shadow">
+                <img src="./image/popular-6.jpeg" alt="popular">
+                <div>
+                    <span>
+                        Tokyo, Tokyo, Japan
+                    </span>
+                    <ul class="rating flex">
+                        <li>
+                            <i class="fas fa-star"></i>
+                        </li>
+                        <li>
+                            <i class="fas fa-star"></i>
+                        </li>
+                        <li>
+                            <i class="fas fa-star"></i>
+                        </li>
+                        <li>
+                            <i class="fas fa-star"></i>
+                        </li>
+                        <li>
+                            <i class="fas fa-star-half-alt"></i>
+                        </li>
+                        <li>&nbsp; 999 reviews</li>
+                    </ul>
+                    <p class="text">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut, blanditiis.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+
+    <footer class="py-4">
+        <div class="container footer-row">
+            <div class="footer-item">
+                <a href="index.html" class="site-brand">
+                    Trip<span>Boss</span>
+                </a>
+                <p class="text">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias blanditiis labore magnam, tempora explicabo expedita! Culpa laborum, quam voluptates sint debitis, et sequi recusandae hic dignissimos dolores iste accusantium officiis.
+                </p>
+            </div>
+            <div class="footer-item">
+                <h2>Follow us on:</h2>
+                <ul class="social-links">
+                    <li class="social-item">
+                        <a href="#">
+                            <i class=" social-icon fa-brands fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a href="#">
+                            <i class=" social-icon fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a href="#">
+                            <i class=" social-icon fa-brands fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a href="#">
+                            <i class=" social-icon fa-brands fa-youtube"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-item">
+                <h2>Popular Places:</h2>
+                <ul>
+                    <li><a href="#">ThaiLand</a></li>
+                    <li><a href="#">VietNam</a></li>
+                    <li><a href="#">NewYork</a></li>
+                    <li><a href="#">Paris</a></li>
+                    <li><a href="#">Germany</a></li>
+                </ul>
+            </div>
+            <div class="subscribe-form footer-item">
+                <h2>Subscribe for NewSletter!</h2>
+                <form class="flex">
+                    <input type="email" placeholder="Enter Email" class="form-control">
+                    <input type="submit" class="btn" value="Subscribe">
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    
+    <script src="./script/script-1.js"></script>
+    <script >
+        const allGalleryItem = document.querySelectorAll('.gallery-item');
+        const imgModalDiv = document.getElementById('img-modal-box');
+        const modalCloseBtn = document.getElementById('modal-close-btn');
+        const nextBtn = document.getElementById('next-btn');
+        const prevBtn = document.getElementById('prev-btn');
+        let imgIndex = 0 ;
+
+        allGalleryItem.forEach( (galleryItem ) => {
+            galleryItem.addEventListener('click' , () => {
+                imgModalDiv.style.display = "block";
+                let imgSrc = galleryItem.querySelector('img').src;
+                console.log(imgSrc)
+                imgIndex = parseInt( imgSrc.split("-")[2].substring(0,1));
+                console.log(imgIndex);
+                showImageContent(imgIndex);
+            })
+        }); 
+
+        nextBtn.addEventListener( 'click', () => {
+            imgIndex++;
+            if(imgIndex > allGalleryItem.length) {
+                imgIndex = 1;
+            }
+            showImageContent(imgIndex);
+        })
+        prevBtn.addEventListener( 'click', () => {
+            imgIndex--;
+            if(imgIndex <= 0) {
+                imgIndex = allGalleryItem.length;
+            }
+            showImageContent(imgIndex);
+        })
+
+        function showImageContent( index) {
+            imgModalDiv.querySelector('#img-modal img').src = `image/screen-${index}.jpg`;
+        }
+        modalCloseBtn.addEventListener('click', () => {
+            imgModalDiv.style.display = "none";
+        })
+    </script>
+</body>
+</html>
