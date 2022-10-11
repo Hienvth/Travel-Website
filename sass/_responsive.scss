@@ -217,6 +217,10 @@
         &-row {
             grid-template-columns: repeat(1 ,1fr);
         }
+        &__item-bottom .text {
+            @include line-text(4);
+
+        }
     }
     .about-row, .facts-row, .contact-row{
         grid-template-columns: repeat(1, 1fr);
@@ -326,6 +330,10 @@
     .blog { 
         &-row {
             grid-template-columns: repeat(2 ,1fr);
+        }
+        &__item-bottom .text {
+            @include line-text(4);
+
         }
     }
     .facts-row {
