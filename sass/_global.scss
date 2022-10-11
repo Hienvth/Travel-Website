@@ -1,0 +1,119 @@
+
+ 
+h1 {
+    font-size: 4rem;
+    color: #fff;
+}
+.container {
+    max-width: 130rem;
+    padding: 0 2rem;
+    margin: 0 auto;
+}
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text {
+    padding: 0 1rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    opacity: 0.8;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    text-align: left;
+
+              
+}
+button, input[type = "submit"] {
+    // margin: 2rem;
+    min-height: 50px;
+    padding: 0 4rem;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.4;
+    cursor: pointer;
+}
+.form-control {
+    width: 100%;
+    max-width: 500px;
+    padding: 1rem;
+    margin: 1rem 0;
+    border: 1px solid #999;
+    border-radius: 6px;
+    box-sizing: border-box;
+    background: transparent;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+.btn {
+    padding: 1rem 2.4rem;
+    border: 1px solid $primary-color;
+    border-radius: 6px;
+    background-color: $primary-color;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.btn:hover {
+    opacity: 0.8;
+    transition: $trans;
+}
+textarea:focus, input:focus {
+    color: #fff;
+    outline: none;
+}
+input, select, textarea{
+    color: #fff;
+}
+.resize-animation-stopper * {
+    -webkit-animation: none !important;
+            animation: none !important;
+    transition: none !important;
+}
+img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+}
+.title-wrap{
+    padding: 2rem 0;
+    margin-bottom: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.lg-title {
+    font-size: 3.2rem;
+    font-weight: 800;
+}
+.sm-title{
+    display: block;
+    max-width: 450px;
+    padding-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    color: #787878;
+    font-size: 1.9rem;
+    font-weight: 300;
+    line-height: 1.7;
+}
+.py-4 {
+    padding: 4rem 0;
+}
+.my-2{
+    margin: 2rem 0;
+}
+.shadow:hover {
+    box-shadow: 0 0 18px -4px rgba(109, 109, 109, 0.64);
+}
+@mixin line-text($number:3) {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $number;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+ 
+    

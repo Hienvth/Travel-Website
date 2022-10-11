@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel Website</title>
+    <title>My Travel Web</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
+   <link rel="stylesheet" href="./css/app.css">
 
 </head>
 <body>
@@ -16,147 +17,167 @@
         <div class="container flex">
             <a href="index.html" class="site-brand">
                 Trip<span>Boss</span>
-            </a>
-
-            <button id="navbar-show-btn" class="flex" type="button">
-                <i class="fas fa-bars"></i>
-            </button>
-
+            </a>            
             <div id="navbar-collapse">
                 <button id="navbar-close-btn" class="flex" type="button">
                     <i class="fas fa-times"></i>
                 </button>
                 <ul class="navbar-nav">
-                    <li class="navbar-item">
-                        <a href="index.html" class="navbar-link">Home</a>
+                    <li class="navbar-item ">
+                        <a href="index.html" class="navbar-link item__active ">Home</a>
+                        <span class="bar"></span>
                     </li>
                     <li class="navbar-item">
                         <a href="gallery.html" class="navbar-link">Gallery</a>
+                        <span class="bar"></span>
+
                     </li>
                     <li class="navbar-item">
                         <a href="blog.html" class="navbar-link">Blog</a>
+                        <span class="bar"></span>
+
                     </li>
                     <li class="navbar-item">
                         <a href="about.html" class="navbar-link">About</a>
+                        <span class="bar"></span>
+
                     </li>
                     <li class="navbar-item">
                         <a href="contact.html" class="navbar-link">Contact</a>
+                        <span class="bar"></span>
+
                     </li>
                 </ul>
             </div>
+            <button id="navbar-show-btn" class="flex" type="button">
+                <i class="fas fa-bars"></i>
+            </button>
+            
         </div>
+        
     </nav>
-
-    <header class="flex">
+    <div>
+        <button class="pageUp" id="page-up">
+            <a href="#header">
+                <i class="fa-sharp fa-solid fa-angle-up"></i>
+            </a>
+        </button>
+    </div>
+    <header id="header" class="flex">
         <div class="container">
             <div class="header-title">
-                <h1>Leave Your Footprint</h1>
+                <h1 class="header-title--main">
+                    leave your footprint
+                </h1>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore quisquam labore sed, illo quam, sunt cum dolore iusto quidem nam, laudantium aliquam soluta? Perspiciatis necessitatibus ex minima excepturi dolorem quia!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, natus porro. Cum doloremque harum cupiditate impedit quia dolorum sequi fuga!
                 </p>
             </div>
             <div class="header-form">
-                <h3>Choose your Travel location:</h3>
-                <form class="flex">
+                <h3>
+                    Choose your travel location
+                </h3>
+                <form  class="flex">
                     <input type="text" class="form-control" placeholder="Destination name">
                     <input type="date" class="form-control" placeholder="Date">
                     <input type="number" class="form-control" placeholder="Price ($)">
-                    <input type="submit" value="Search" class="btn">
                 </form>
+                <input type="submit" value="Search" class="btn">
+                
             </div>
         </div>
     </header>
     <section id="featured" class="py-4">
         <div class="container">
             <div class="title-wrap">
-                <span class="sm-title">
+                <div class="sm-title">
                     know about some places before your travel
-                </span>
-                <h2 class="lg-title">
+                </div>
+                <div class="lg-title">
                     featured places
-                </h2>
+                </div>
             </div>
             <div class="featured-row">
-                <div class="featured-item my-2 shadow">
-                    <img src="./image/ReoDeJaneiro-Brazil.jpg" alt="featured">
-                    <div class="featured-item-content">
-                        <span>
-                            <i class="fa-sharp fa-solid fa-location-dot"></i>
-                            Reo De Janeiro, Brazil
-                        </span>
-                        <div>
-                            <p class="text">
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti praesentium corporis expedita alias soluta libero velit sunt, placeat ad accusamus hic 
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="featured-item my-2 shadow">
-                    <img src="./image/North Bondi, Australia.jpg" alt="featured">
-                    <div class="featured-item-content">
-                        <span>
-                            <i class="fa-sharp fa-solid fa-location-dot"></i>
-                            North Bondi, Australia
-                        </span>
-                        <div>
-                            <p class="text">
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti praesentium corporis expedita alias soluta libero velit sunt, placeat ad accusamus hic 
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="featured-item my-2 shadow">
-                    <img src="./image/Berlin, Germany.jpeg" alt="featured">
-                    <div class="featured-item-content">
+                <div class="featured__item my-2 shadow">
+                    <img class="featured__item" src="./image/Berlin, Germany.jpeg" alt="featured">
+                    <div class="featured__item--content">
                         <span>
                             <i class="fa-sharp fa-solid fa-location-dot"></i>
                             Berlin, Germany
                         </span>
                         <div>
                             <p class="text">
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti praesentium corporis expedita alias soluta libero velit sunt, placeat ad accusamus hic 
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas similique vero a pariatur quidem corporis?
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="featured-item my-2 shadow">
-                    <img src="./image/Khwaeng wat arun, Thailand.jpg" alt="featured">
-                    <div class="featured-item-content">
-                        <span>
-                            <i class="fa-sharp fa-solid fa-location-dot"></i>
-                            Khwaeng wat arun, Thailand
-                        </span>
-                        <div>
-                            <p class="text">
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti praesentium corporis expedita alias soluta libero velit sunt, placeat ad accusamus hic 
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="featured-item my-2 shadow">
-                    <img src="./image/Rome, Italy.jpg" alt="featured">
-                    <div class="featured-item-content">
-                        <span>
-                            <i class="fa-sharp fa-solid fa-location-dot"></i>
-                            Rome, Italy
-                        </span>
-                        <div>
-                            <p class="text">
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti praesentium corporis expedita alias soluta libero velit sunt, placeat ad accusamus hic 
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="featured-item my-2 shadow">
-                    <img src="./image/fuvahmulah, maldives.jpg" alt="featured">
-                    <div class="featured-item-content">
+                <div class="featured__item my-2 shadow">
+                    <img class="featured__item" src="./image/fuvahmulah, maldives.jpg" alt="featured">
+                    <div class="featured__item--content">
                         <span>
                             <i class="fa-sharp fa-solid fa-location-dot"></i>
                             fuvahmulah, maldives
                         </span>
                         <div>
                             <p class="text">
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti praesentium corporis expedita alias soluta libero velit sunt, placeat ad accusamus hic 
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas similique vero a pariatur quidem corporis?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="featured__item my-2 shadow">
+                    <img class="featured__item" src="./image/Khwaeng wat arun, Thailand.jpg" alt="featured">
+                    <div class="featured__item--content">
+                        <span>
+                            <i class="fa-sharp fa-solid fa-location-dot"></i>
+                            Khwaeng wat arun, Thailand
+                        </span>
+                        <div>
+                            <p class="text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas similique vero a pariatur quidem corporis?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="featured__item my-2 shadow">
+                    <img class="featured__item" src="./image/North Bondi, Australia.jpg" alt="featured">
+                    <div class="featured__item--content">
+                        <span>
+                            <i class="fa-sharp fa-solid fa-location-dot"></i>
+                            North Bondi, Australia
+                        </span>
+                        <div>
+                            <p class="text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas similique vero a pariatur quidem corporis?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="featured__item my-2 shadow">
+                    <img class="featured__item" src="./image/ReoDeJaneiro-Brazil.jpg" alt="featured">
+                    <div class="featured__item--content">
+                        <span>
+                            <i class="fa-sharp fa-solid fa-location-dot"></i>
+                            ReoDeJaneiro-Brazil
+                        </span>
+                        <div>
+                            <p class="text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas similique vero a pariatur quidem corporis?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="featured__item my-2 shadow">
+                    <img class="featured__item" src="./image/Rome, Italy.jpg" alt="featured">
+                    <div class="featured__item--content">
+                        <span>
+                            <i class="fa-sharp fa-solid fa-location-dot"></i>
+                            Rome, Italy
+                        </span>
+                        <div>
+                            <p class="text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas similique vero a pariatur quidem corporis?
                             </p>
                         </div>
                     </div>
@@ -164,180 +185,273 @@
             </div>
         </div>
     </section>
-
-    <!-- service  -->
     <section id="services" class="py-4">
         <div class="container">
             <div class="title-wrap">
-                <span class="sm-title">
+                <div class="sm-title">
                     know about services we offer
-                </span>
-                <h2 class="lg-title">
-                    Our services
-                </h2>
+                </div>
+                <div class="lg-title">
+                    our services
+                </div>
             </div>
             <div class="services-row">
-                <div class="services-item">
-                    <span class="services-icon">
+                <div class="services__item">
+                    <span class="services__item--icon">
                         <i class="fa-solid fa-hotel"></i>
                     </span>
-                    <h3>Luxurious Hotel</h3>
+                    <h3 class="services__item--title">
+                        Luxurious Hotel
+                    </h3>
                     <p class="text">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat amet necessitatibus vitae distinctio, illum, neque molestiae praesentium perspiciatis doloribus quibusdam, ea architecto accusantium ab libero officiis! Fugiat aut dolorem repellendus?
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente libero ullam aliquid ratione, soluta saepe. Cupiditate pariatur deleniti voluptatum eligendi?
                     </p>
-                    <a href="#" class="btn">Read more</a>
+                    <a href="#!" class="btn">Read more</a>
                 </div>
-                <div class="services-item">
-                    <span class="services-icon">
+                <div class="services__item">
+                    <span class="services__item--icon">
                         <i class="fa-solid fa-map-location-dot"></i>
                     </span>
-                    <h3>Travel Guide</h3>
+                    <h3 class="services__item--title">
+                        Travel Guide
+                    </h3>
                     <p class="text">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat amet necessitatibus vitae distinctio, illum, neque molestiae praesentium perspiciatis doloribus quibusdam, ea architecto accusantium ab libero officiis! Fugiat aut dolorem repellendus?
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente libero ullam aliquid ratione, soluta saepe. Cupiditate pariatur deleniti voluptatum eligendi?
                     </p>
-                    <a href="#" class="btn">Read more</a>
-
+                    <a href="#!" class="btn">Read more</a>
                 </div>
-                <div class="services-item">
-                    <span class="services-icon">
+                <div class="services__item">
+                    <span class="services__item--icon">
                         <i class="fa-solid fa-money-bill"></i>
                     </span>
-                    <h3>Suitable Price</h3>
+                    <h3 class="services__item--title">
+                        Suitable Price
+                    </h3>
                     <p class="text">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat amet necessitatibus vitae distinctio, illum, neque molestiae praesentium perspiciatis doloribus quibusdam, ea architecto accusantium ab libero officiis! Fugiat aut dolorem repellendus?
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente libero ullam aliquid ratione, soluta saepe. Cupiditate pariatur deleniti voluptatum eligendi?
                     </p>
-                    <a href="#" class="btn">Read more</a>
-
+                    <a href="#!" class="btn">Read more</a>
                 </div>
+    
             </div>
         </div>
     </section>
-
-    <!-- testimonials -->
     <section id="testimonials" class="py-4">
         <div class="container">
             <div class="title-wrap">
-                <span class="sm-title">
-                    what our clients say about us
-                </span>
-                <h2 class="lg-title">
+                <div class="sm-title">
+                    what our client say about us
+                </div>
+                <div class="lg-title">
                     testimonials
-                </h2>
-            </div>
-            <div class="test-row">
-                <div class="test-item">
-                    <p class="text">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt cumque fugit ex reprehenderit distinctio hic minima enim voluptate quisquam. Commodi accusantium eos rem iste sapiente voluptatum debitis, ipsam tempore reiciendis?
-                    </p>
-                    <div class="test-item-info">
-                        <img src="./image/person1.jpg" alt="person-1">
-                        <div>
-                            <h3>Hiển Võ</h3>
-                            <p class="text">Trip to VietNam</p>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="test-item">
-                    <p class="text">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt cumque fugit ex reprehenderit distinctio hic minima enim voluptate quisquam. Commodi accusantium eos rem iste sapiente voluptatum debitis, ipsam tempore reiciendis?
-                    </p>
-                    <div class="test-item-info">
-                        <img src="./image/person2.jpg" alt="person-1">
-                        <div>
-                            <h3>Phương Khanh</h3>
-                            <p class="text">Trip to VietNam</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="test-item">
-                    <p class="text">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt cumque fugit ex reprehenderit distinctio hic minima enim voluptate quisquam. Commodi accusantium eos rem iste sapiente voluptatum debitis, ipsam tempore reiciendis?
-                    </p>
-                    <div class="test-item-info">
-                        <img src="./image/person3.jpg" alt="person-1">
-                        <div>
-                            <h3>Khanh Trần</h3>
-                            <p class="text">Trip to VietNam</p>
-
-                        </div>
-                    </div>
                 </div>
             </div>
+            <div class="testimonials-row">
+                <div class="testimonials__item">
+                    <div class="testimonials__item--text">
+                        <p class="text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus eum inventore quo enim dolorum iure unde, possimus ut ipsum sapiente!
+                        </p>
+                    </div>
+                    <div class="testimonials__item--info">
+                        <img src="./image/person.jpg" alt="info-img">
+                        <div>
+                            <h3>The Name</h3>
+                            <p class="text">Trip to VietNam</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonials__item">
+                    <div class="testimonials__item--text">
+                        <p class="text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus eum inventore quo enim dolorum iure unde, possimus ut ipsum sapiente!
+                        </p>
+                    </div>
+                    <div class="testimonials__item--info">
+                        <img src="./image/person.jpg" alt="info-img">
+                        <div>
+                            <h3>The Name</h3>
+                            <p class="text">Trip to VietNam</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonials__item">
+                    <div class="testimonials__item--text">
+                        <p class="text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus eum inventore quo enim dolorum iure unde, possimus ut ipsum sapiente!
+                        </p>
+                    </div>
+                    <div class="testimonials__item--info">
+                        <img src="./image/person.jpg" alt="info-img">
+                        <div>
+                            <h3>The Name</h3>
+                            <p class="text">Trip to VietNam</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
         </div>
     </section>
-
-    <!-- video -->
     <section id="video">
-        <div class="video-wrapper flex">
-            <video loop>
-                <source src="./video/y2meta.com - XIN CHÀO VIỆT NAM _ DU LỊCH XUYÊN VIỆT _ PHIÊN BẢN FLYCAM _ HELLO VIET NAM.mp4" type="video/mp4">
-            </video>
-            <button type="button" id="play-btn">
+        <div class="video__wrapper flex">
+            <video src="./video/video1.mp4" class="video__creen"></video>
+            <button class="play-btn" id="play-btn">
                 <i class="fa-solid fa-play"></i>
             </button>
+            <button class="pause-btn" id="pause-btn">
+                <i class="fa-solid fa-pause"></i>
+            </button>
+
         </div>
     </section>
-
-    <!-- footer -->
-
-    <footer class="py-4">
-        <div class="container footer-row">
-            <div class="footer-item">
-                <a href="index.html" class="site-brand">
-                    Trip<span>Boss</span>
-                </a>
-                <p class="text">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias blanditiis labore magnam, tempora explicabo expedita! Culpa laborum, quam voluptates sint debitis, et sequi recusandae hic dignissimos dolores iste accusantium officiis.
-                </p>
-            </div>
-            <div class="footer-item">
-                <h2>Follow us on:</h2>
-                <ul class="social-links">
-                    <li class="social-item">
-                        <a href="#">
-                            <i class=" social-icon fa-brands fa-facebook"></i>
-                        </a>
-                    </li>
-                    <li class="social-item">
-                        <a href="#">
-                            <i class=" social-icon fa-brands fa-instagram"></i>
-                        </a>
-                    </li>
-                    <li class="social-item">
-                        <a href="#">
-                            <i class=" social-icon fa-brands fa-twitter"></i>
-                        </a>
-                    </li>
-                    <li class="social-item">
-                        <a href="#">
-                            <i class=" social-icon fa-brands fa-youtube"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="footer-item">
-                <h2>Popular Places:</h2>
-                <ul>
-                    <li><a href="#">ThaiLand</a></li>
-                    <li><a href="#">VietNam</a></li>
-                    <li><a href="#">NewYork</a></li>
-                    <li><a href="#">Paris</a></li>
-                    <li><a href="#">Germany</a></li>
-                </ul>
-            </div>
-            <div class="subscribe-form footer-item">
-                <h2>Subscribe for NewSletter!</h2>
-                <form class="flex">
-                    <input type="email" placeholder="Enter Email" class="form-control">
-                    <input type="submit" class="btn" value="Subscribe">
-                </form>
+    <footer id="footer" class="py-4">
+        <div class="container flex">
+            <div class="footer-row">
+                <div class="footer__item">
+                   <a href="index.html" class="site-brand">
+                        Trip<span>Boss</span>
+                   </a>
+                   <p class="text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, blanditiis. Libero cupiditate enim corporis impedit.
+                   </p>
+                </div>
+                <div class="footer__item">
+                    <h2>
+                        Follow us on
+                    </h2>
+                    <ul class="footer__item-icon--list">
+                        <li class="footer__item--link">
+                            <a href="#!">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="footer__item--link">
+                            <a href="#!">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="footer__item--link">
+                            <a href="#!">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="footer__item--link">
+                            <a href="#!">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </li>
+                       
+                    </ul>
+                </div>
+                <div class="footer__item">
+                    <h2>
+                        Popular Places
+                    </h2>
+                    <ul class="footer__item--list">
+                        <li class="footer__item--link">
+                            <a href="#!">
+                                VietNam
+                            </a>
+                        </li>
+                        <li class="footer__item--link">
+                            <a href="#!">
+                                Janpan
+                            </a>
+                        </li>
+                        <li class="footer__item--link">
+                            <a href="#!">
+                                ThaiLand
+                            </a>
+                        </li>
+                        <li class="footer__item--link">
+                            <a href="#!">
+                                Paris
+                            </a>
+                        </li>
+                        <li class="footer__item--link">
+                            <a href="#!">
+                                China
+                            </a>
+                        </li>
+                       
+                    </ul>
+                </div>
+                <div class="footer__item subcribe">
+                    <h2>Subscribe for NewSletter!</h2>
+                    <form class="subcribe__form flex">
+                        <input type="email" class="form-control" placeholder="Enter your email">
+                        <button href="#!" class="form-control btn">Subscribe</button>
+                    </form>
+                </div>
             </div>
         </div>
     </footer>
+    <script >
+        let navbarDiv = document.querySelector('.navbar');
+        const pageUPBtn = document.querySelector('.pageUp');
+        window.addEventListener('scroll', () => {
+            if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+                navbarDiv.classList.add('navbar-cng') ;
+                pageUPBtn.style.display = "flex"
+            }
+            else {
+                navbarDiv.classList.remove('navbar-cng');
+                pageUPBtn.style.display = "none"
+            }
+        });
+        pageUPBtn.addEventListener( 'click', clickHandler)
+        function clickHandler(e) {
+            e.preventDefault();
+            const href = this.firstElementChild.getAttribute("href");
+            document.querySelector(href).scrollIntoView({
+                behavior : "smooth"
+            })
+        }
+        
+        const navbarCollapseDiv = document.getElementById('navbar-collapse');
+        const navbarShowBtn = document.getElementById('navbar-show-btn');
+        const navbarCloseBtn = document.getElementById('navbar-close-btn');
 
-    
-    <script src="./script/script-1.js"></script>
-    <script src="./script/script-2.js"></script>
+        navbarShowBtn.addEventListener('click', () => {
+            navbarCollapseDiv.classList.add('navbar-collapse-rmw')
+        });
+        navbarCloseBtn.addEventListener('click', () => {
+            navbarCollapseDiv.classList.remove('navbar-collapse-rmw')
+        });
+        document.addEventListener( 'click', (e) => {
+            if ( e.target.id != "navbar-collapse" && e.target.id != "navbar-show-btn" && e.target.parentElement.id != "navbar-show-btn") {
+                navbarCollapseDiv.classList.remove('navbar-collapse-rmw')
+            }
+        });
+
+        
+        // stop transition and animation
+        let resizeTimer ;
+        window.addEventListener('resize', () => {
+            document.body.classList.add('resize-animation-stopper');
+            clearTimeout(resizeTimer);
+            resizeTimer = setTimeout(() => {
+                document.body.classList.remove("resize-animation-stopper");
+            }, 400)
+        })
+
+        //play video
+        let video = document.querySelector('.video__wrapper .video__creen');
+        const btnPlay = document.querySelector('.play-btn');
+        const btnStop = document.querySelector('.pause-btn');
+        document.getElementById('play-btn').addEventListener('click', ()=> {
+            if (video.paused) {
+                btnPlay.style.display = "none";
+                video.play();
+            }
+        })
+        document.getElementById('pause-btn').addEventListener('click', ()=> {
+            if (video.play) {
+                btnPlay.style.display = "flex";
+                video.pause();
+            }
+        })
+    </script>
 </body>
 </html>

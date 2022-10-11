@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel Website</title>
+    <title>My Travel Web</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
+   <link rel="stylesheet" href="./css/app.css">
 
 </head>
 <body>
@@ -16,51 +17,66 @@
         <div class="container flex">
             <a href="index.html" class="site-brand">
                 Trip<span>Boss</span>
-            </a>
-
-            <button id="navbar-show-btn" class="flex" type="button">
-                <i class="fas fa-bars"></i>
-            </button>
-
+            </a>            
             <div id="navbar-collapse">
                 <button id="navbar-close-btn" class="flex" type="button">
                     <i class="fas fa-times"></i>
                 </button>
                 <ul class="navbar-nav">
-                    <li class="navbar-item">
-                        <a href="index.html" class="navbar-link">Home</a>
+                    <li class="navbar-item ">
+                        <a href="index.html" class="navbar-link ">Home</a>
+                        <span class="bar"></span>
                     </li>
                     <li class="navbar-item">
                         <a href="gallery.html" class="navbar-link">Gallery</a>
+                        <span class="bar"></span>
+
                     </li>
                     <li class="navbar-item">
-                        <a href="blog.html" class="navbar-link">Blog</a>
+                        <a href="blog.html" class="navbar-link item__active">Blog</a>
+                        <span class="bar"></span>
+
                     </li>
                     <li class="navbar-item">
                         <a href="about.html" class="navbar-link">About</a>
+                        <span class="bar"></span>
+
                     </li>
                     <li class="navbar-item">
                         <a href="contact.html" class="navbar-link">Contact</a>
+                        <span class="bar"></span>
+
                     </li>
                 </ul>
             </div>
+            <button id="navbar-show-btn" class="flex" type="button">
+                <i class="fas fa-bars"></i>
+            </button>
+            
         </div>
+        
     </nav>
-
-    <header class="flex header-sm">
+    <div>
+        <button class="pageUp" id="page-up">
+            <a href="#header">
+                <i class="fa-sharp fa-solid fa-angle-up"></i>
+            </a>
+        </button>
+    </div>
+    <header id="header" class="flex">
         <div class="container">
             <div class="header-title">
-                <h1>Blog</h1>
+                <h1 class="header-title--main">
+                    Blog
+                </h1>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore quisquam labore sed, illo quam, sunt cum dolore iusto quidem nam, laudantium aliquam soluta? Perspiciatis necessitatibus ex minima excepturi dolorem quia!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, natus porro. Cum doloremque harum cupiditate impedit quia dolorum sequi fuga!
                 </p>
             </div>
-
             
         </div>
     </header>
-
-
+    
     <section id="blog" class="py-4">
         <div class="container">
             <div class="title-wrap">
@@ -72,173 +88,278 @@
                 </h3>
             </div>
             <div class="blog-row">
-                <div class="blog-item my-2 shadow">
-                    <div class="blog-item-top">
-                        <img src="./image/blog-1.jpeg" alt="blog">
-                        <span class="blog-date">
-                            Sep 11, 2022
-                        </span>
+                <div class="blog__item shadow">
+                    <div class="blog__item-top">
+                        <img src="./image/blog-1.jpeg" alt="blog__img" class="blog__item-top-img">
+                        <span class="date_time">SEP 11, 2022</span>
                     </div>
-                    <div class="blog-item-bottom">
-                        <span>travel | Khanh Tran</span>
-                        <a href="#">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, non.
-                        </a>
-                        <p class="text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate magnam itaque dolore culpa, tenetur ducimus quas eos dolorum cumque aspernatur, quaerat sed. Sint rerum illo magnam temporibus iste id voluptatem!
-                        </p>
+                    <div class="blog__item-bottom">
+                        <h3 class="blog__item-bottom--title">
+                            <span>TRAVEL</span> | The Name
+                        </h3>
+                        <h4 class="blog__item-bottom--title-decs">
+                            <a href="#!">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, adipisci!</a>
+                        </h4>
+                        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, rem! Et alias laudantium molestiae quae deserunt reiciendis soluta cum odio!</p>
                     </div>
                 </div>
-                <div class="blog-item my-2 shadow">
-                    <div class="blog-item-top">
-                        <img src="./image/blog-2.jpeg" alt="blog">
-                        <span class="blog-date">
-                            Sep 11, 2022
-                        </span>
+                <div class="blog__item shadow">
+                    <div class="blog__item-top">
+                        <img src="./image/blog-2.jpeg" alt="blog__img" class="blog__item-top-img">
+                        <span class="date_time">SEP 11, 2022</span>
                     </div>
-                    <div class="blog-item-bottom">
-                        <span>travel | Khanh Tran</span>
-                        <a href="#">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, non.
-                        </a>
-                        <p class="text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate magnam itaque dolore culpa, tenetur ducimus quas eos dolorum cumque aspernatur, quaerat sed. Sint rerum illo magnam temporibus iste id voluptatem!
-                        </p>
+                    <div class="blog__item-bottom">
+                        <h3 class="blog__item-bottom--title">
+                            <span>TRAVEL</span> | The Name
+                        </h3>
+                        <h4 class="blog__item-bottom--title-decs">
+                            <a href="#!">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, adipisci!</a>
+                        </h4>
+                        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, rem! Et alias laudantium molestiae quae deserunt reiciendis soluta cum odio!</p>
                     </div>
                 </div>
-                <div class="blog-item my-2 shadow">
-                    <div class="blog-item-top">
-                        <img src="./image/blog-3.jpeg" alt="blog">
-                        <span class="blog-date">
-                            Sep 11, 2022
-                        </span>
+                <div class="blog__item shadow">
+                    <div class="blog__item-top">
+                        <img src="./image/blog-3.jpeg" alt="blog__img" class="blog__item-top-img">
+                        <span class="date_time">SEP 11, 2022</span>
                     </div>
-                    <div class="blog-item-bottom">
-                        <span>travel | Khanh Tran</span>
-                        <a href="#">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, non.
-                        </a>
-                        <p class="text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate magnam itaque dolore culpa, tenetur ducimus quas eos dolorum cumque aspernatur, quaerat sed. Sint rerum illo magnam temporibus iste id voluptatem!
-                        </p>
+                    <div class="blog__item-bottom">
+                        <h3 class="blog__item-bottom--title">
+                            <span>TRAVEL</span> | The Name
+                        </h3>
+                        <h4 class="blog__item-bottom--title-decs">
+                            <a href="#!">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, adipisci!</a>
+                        </h4>
+                        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, rem! Et alias laudantium molestiae quae deserunt reiciendis soluta cum odio!</p>
                     </div>
                 </div>
-                <div class="blog-item my-2 shadow">
-                    <div class="blog-item-top">
-                        <img src="./image/blog-4.jpeg" alt="blog">
-                        <span class="blog-date">
-                            Sep 11, 2022
-                        </span>
+                <div class="blog__item shadow">
+                    <div class="blog__item-top">
+                        <img src="./image/blog-4.jpeg" alt="blog__img" class="blog__item-top-img">
+                        <span class="date_time">SEP 11, 2022</span>
                     </div>
-                    <div class="blog-item-bottom">
-                        <span>travel | Khanh Tran</span>
-                        <a href="#">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, non.
-                        </a>
-                        <p class="text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate magnam itaque dolore culpa, tenetur ducimus quas eos dolorum cumque aspernatur, quaerat sed. Sint rerum illo magnam temporibus iste id voluptatem!
-                        </p>
+                    <div class="blog__item-bottom">
+                        <h3 class="blog__item-bottom--title">
+                            <span>TRAVEL</span> | The Name
+                        </h3>
+                        <h4 class="blog__item-bottom--title-decs">
+                            <a href="#!">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, adipisci!</a>
+                        </h4>
+                        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, rem! Et alias laudantium molestiae quae deserunt reiciendis soluta cum odio!</p>
                     </div>
                 </div>
-                <div class="blog-item my-2 shadow">
-                    <div class="blog-item-top">
-                        <img src="./image/blog-5.jpeg" alt="blog">
-                        <span class="blog-date">
-                            Sep 11, 2022
-                        </span>
+                <div class="blog__item shadow">
+                    <div class="blog__item-top">
+                        <img src="./image/blog-5.jpeg" alt="blog__img" class="blog__item-top-img">
+                        <span class="date_time">SEP 11, 2022</span>
                     </div>
-                    <div class="blog-item-bottom">
-                        <span>travel | Khanh Tran</span>
-                        <a href="#">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, non.
-                        </a>
-                        <p class="text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate magnam itaque dolore culpa, tenetur ducimus quas eos dolorum cumque aspernatur, quaerat sed. Sint rerum illo magnam temporibus iste id voluptatem!
-                        </p>
+                    <div class="blog__item-bottom">
+                        <h3 class="blog__item-bottom--title">
+                            <span>TRAVEL</span> | The Name
+                        </h3>
+                        <h4 class="blog__item-bottom--title-decs">
+                            <a href="#!">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, adipisci!</a>
+                        </h4>
+                        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, rem! Et alias laudantium molestiae quae deserunt reiciendis soluta cum odio!</p>
                     </div>
                 </div>
-                <div class="blog-item my-2 shadow">
-                    <div class="blog-item-top">
-                        <img src="./image/blog-6.jpeg" alt="blog">
-                        <span class="blog-date">
-                            Sep 11, 2022
-                        </span>
+                <div class="blog__item shadow">
+                    <div class="blog__item-top">
+                        <img src="./image/blog-6.jpeg" alt="blog__img" class="blog__item-top-img">
+                        <span class="date_time">SEP 11, 2022</span>
                     </div>
-                    <div class="blog-item-bottom">
-                        <span>travel | Khanh Tran</span>
-                        <a href="#">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, non.
-                        </a>
-                        <p class="text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate magnam itaque dolore culpa, tenetur ducimus quas eos dolorum cumque aspernatur, quaerat sed. Sint rerum illo magnam temporibus iste id voluptatem!
-                        </p>
+                    <div class="blog__item-bottom">
+                        <h3 class="blog__item-bottom--title">
+                            <span>TRAVEL</span> | The Name
+                        </h3>
+                        <h4 class="blog__item-bottom--title-decs">
+                            <a href="#!">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, adipisci!</a>
+                        </h4>
+                        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, rem! Et alias laudantium molestiae quae deserunt reiciendis soluta cum odio!</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- footer -->
-
-    <footer class="py-4">
-        <div class="container footer-row">
-            <div class="footer-item">
-                <a href="index.html" class="site-brand">
-                    Trip<span>Boss</span>
-                </a>
-                <p class="text">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias blanditiis labore magnam, tempora explicabo expedita! Culpa laborum, quam voluptates sint debitis, et sequi recusandae hic dignissimos dolores iste accusantium officiis.
-                </p>
-            </div>
-            <div class="footer-item">
-                <h2>Follow us on:</h2>
-                <ul class="social-links">
-                    <li class="social-item">
-                        <a href="#">
-                            <i class=" social-icon fa-brands fa-facebook"></i>
-                        </a>
-                    </li>
-                    <li class="social-item">
-                        <a href="#">
-                            <i class=" social-icon fa-brands fa-instagram"></i>
-                        </a>
-                    </li>
-                    <li class="social-item">
-                        <a href="#">
-                            <i class=" social-icon fa-brands fa-twitter"></i>
-                        </a>
-                    </li>
-                    <li class="social-item">
-                        <a href="#">
-                            <i class=" social-icon fa-brands fa-youtube"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="footer-item">
-                <h2>Popular Places:</h2>
-                <ul>
-                    <li><a href="#">ThaiLand</a></li>
-                    <li><a href="#">VietNam</a></li>
-                    <li><a href="#">NewYork</a></li>
-                    <li><a href="#">Paris</a></li>
-                    <li><a href="#">Germany</a></li>
-                </ul>
-            </div>
-            <div class="subscribe-form footer-item">
-                <h2>Subscribe for NewSletter!</h2>
-                <form class="flex">
-                    <input type="email" placeholder="Enter Email" class="form-control">
-                    <input type="submit" class="btn" value="Subscribe">
-                </form>
-            </div>
-        </div>
-    </footer>
-
     
-    <script src="./script/script-1.js"></script>
-    <script >
+
+        <footer id="footer" class="py-4">
+            <div class="container flex">
+                <div class="footer-row">
+                    <div class="footer__item">
+                    <a href="index.html" class="site-brand">
+                            Trip<span>Boss</span>
+                    </a>
+                    <p class="text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, blanditiis. Libero cupiditate enim corporis impedit.
+                    </p>
+                    </div>
+                    <div class="footer__item">
+                        <h2>
+                            Follow us on
+                        </h2>
+                        <ul class="footer__item-icon--list">
+                            <li class="footer__item--link">
+                                <a href="#!">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li class="footer__item--link">
+                                <a href="#!">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li class="footer__item--link">
+                                <a href="#!">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="footer__item--link">
+                                <a href="#!">
+                                    <i class="fa-brands fa-youtube"></i>
+                                </a>
+                            </li>
+                        
+                        </ul>
+                    </div>
+                    <div class="footer__item">
+                        <h2>
+                            Popular Places
+                        </h2>
+                        <ul class="footer__item--list">
+                            <li class="footer__item--link">
+                                <a href="#!">
+                                    VietNam
+                                </a>
+                            </li>
+                            <li class="footer__item--link">
+                                <a href="#!">
+                                    Janpan
+                                </a>
+                            </li>
+                            <li class="footer__item--link">
+                                <a href="#!">
+                                    ThaiLand
+                                </a>
+                            </li>
+                            <li class="footer__item--link">
+                                <a href="#!">
+                                    Paris
+                                </a>
+                            </li>
+                            <li class="footer__item--link">
+                                <a href="#!">
+                                    China
+                                </a>
+                            </li>
+                        
+                        </ul>
+                    </div>
+                    <div class="footer__item subcribe">
+                        <h2>Subscribe for NewSletter!</h2>
+                        <form class="subcribe__form flex">
+                            <input type="email" class="form-control" placeholder="Enter your email">
+                            <button href="#!" class="form-control btn">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- show nav when scroll -->
+        <script >
+            let navbarDiv = document.querySelector('.navbar');
+            const pageUPBtn = document.querySelector('.pageUp');
+            window.addEventListener('scroll', () => {
+                if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+                    navbarDiv.classList.add('navbar-cng') ;
+                    pageUPBtn.style.display = "flex"
+                }
+                else {
+                    navbarDiv.classList.remove('navbar-cng');
+                    pageUPBtn.style.display = "none"
+                }
+            });
+            pageUPBtn.addEventListener( 'click', clickHandler)
+            function clickHandler(e) {
+                e.preventDefault();
+                const href = this.firstElementChild.getAttribute("href");
+                document.querySelector(href).scrollIntoView({
+                    behavior : "smooth"
+                })
+            }
+            
+            const navbarCollapseDiv = document.getElementById('navbar-collapse');
+            const navbarShowBtn = document.getElementById('navbar-show-btn');
+            const navbarCloseBtn = document.getElementById('navbar-close-btn');
+
+            navbarShowBtn.addEventListener('click', () => {
+                navbarCollapseDiv.classList.add('navbar-collapse-rmw')
+            });
+            navbarCloseBtn.addEventListener('click', () => {
+                navbarCollapseDiv.classList.remove('navbar-collapse-rmw')
+            });
+            document.addEventListener( 'click', (e) => {
+                if ( e.target.id != "navbar-collapse" && e.target.id != "navbar-show-btn" && e.target.parentElement.id != "navbar-show-btn") {
+                    navbarCollapseDiv.classList.remove('navbar-collapse-rmw')
+                }
+            });
+
+            
+            // stop transition and animation
+            let resizeTimer ;
+            window.addEventListener('resize', () => {
+                document.body.classList.add('resize-animation-stopper');
+                clearTimeout(resizeTimer);
+                resizeTimer = setTimeout(() => {
+                    document.body.classList.remove("resize-animation-stopper");
+                }, 400)
+            })
+
+            
+        </script>
+        <script>
+            const allGalleryItem = document.querySelectorAll('.gallery__item ');
+            
+            const imgModalDiv = document.getElementById('img-modal-box');
+            const modalCloseBtn = document.getElementById('modal-close-btn');
+            const nextBtn = document.getElementById('next-btn');
+            const prevBtn = document.getElementById('prev-btn');
+            let imgIndex = 0 ;
+
+            allGalleryItem.forEach( (galleryItem ) => {
+                galleryItem.addEventListener('click' , () => {
+                    imgModalDiv.style.display = "block";
+                    let imgSrc = galleryItem.querySelector('img').src;
+                    console.log(imgSrc)
+                    imgIndex = parseInt( imgSrc.split("-")[2].substring(0,1));
+                    console.log(imgIndex);
+                    showImageContent(imgIndex);
+                })
+            }); 
+
+            nextBtn.addEventListener( 'click', () => {
+                imgIndex++;
+                if(imgIndex > allGalleryItem.length) {
+                    imgIndex = 1;
+                }
+                showImageContent(imgIndex);
+            })
+            prevBtn.addEventListener( 'click', () => {
+                imgIndex--;
+                if(imgIndex <= 0) {
+                    imgIndex = allGalleryItem.length;
+                }
+                showImageContent(imgIndex);
+            })
+
+            function showImageContent( index) {
+                imgModalDiv.querySelector('#img-modal img').src = `image/screen-${index}.jpg`;
+            }
+            modalCloseBtn.addEventListener('click', () => {
+                imgModalDiv.style.display = "none";
+            })
+        </script>
         
-    </script>
-</body>
-</html>
+    </body>
+    </html>

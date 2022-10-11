@@ -1,0 +1,40 @@
+#services {
+    background: linear-gradient( rgba(0,0,0,0.4), rgba(0,0,0,.4) ), url(../image/servicestravel.jpg) center/cover no-repeat;
+    & * {
+        color: #fff;
+    }
+}
+.services {
+    &-row {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+    &__item {
+        padding: 2rem 1rem 3rem;
+        margin:  0;
+        background: linear-gradient( -45deg, transparent 0%, transparent 18%, rgba(0,0,0,0.5) 99%, rgba(0,0,0,0.5) 100% );
+        border-radius: .6rem;
+        box-shadow: 2px 3px 3px #999;
+        text-align: center;
+        & h3{
+            margin: 1.2rem 0;
+            font-size: 2.1rem ;
+            font-weight: 700;
+            font-family: "Open Sans",sans-serif;
+        }
+        & .text {
+            font-size: 1.6rem;
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+        &--icon{
+            display: block;
+            margin: 0 auto;
+            font-size: 3rem;            
+        }
+        &:hover{
+            background: linear-gradient(rgba(0,0,0, 0.2), rgba(0,0,0, 0.2)) ;
+        }
+    }
+}
